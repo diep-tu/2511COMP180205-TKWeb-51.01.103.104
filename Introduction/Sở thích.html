@@ -1,0 +1,269 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sở thích của tôi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #f9f9f9, #e6f0ff);
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ol {
+      list-style: decimal;
+      padding-left: 40px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    ul {
+      list-style: square;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+    .sothich1, .sothich2, .sothich3 {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #3498db;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .sothich1.visible,
+    .sothich2.visible,
+    .sothich3.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .amnhac {
+      color: #2c3e50;
+      font-style: italic;
+    }
+    li::marker {
+      color: #3498db;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Tôi có khá nhiều sở thích khác nhau, nhưng ba sở thích mà tôi yêu thích nhất là <strong>chơi cầu lông</strong>, <strong>nghe nhạc theo tâm trạng</strong> và <strong>đi du lịch để ngắm cảnh thiên nhiên</strong>. Những sở thích này không chỉ giúp tôi thư giãn mà còn mang lại cho tôi nhiều trải nghiệm thú vị trong cuộc sống.
+  </p>
+  <ol>
+    <div class="sothich1">
+      <li>🏸 Cầu lông</li>
+      <ul>
+        <li>Bắt đầu chơi từ khi còn học cấp hai và thường chơi vào mỗi buổi chiều, tối hay cuối tuần cùng bạn bè hoặc người thân.</li>
+        <li>Giúp rèn luyện sức khỏe, tăng sự dẻo dai</li>
+        <li>Giải tỏa căng thẳng sau những giờ học mệt mỏi.</li>
+        <li>Giúp học được cách phối hợp nhịp nhàng với đồng đội, cải thiện khả năng phản xạ và sự tập trung.</li>
+      </ul>
+    </div>
+
+    <div class="sothich2">
+      <li>🎧 Nghe nhạc theo tâm trạng</li>
+      <ul>
+        <li>Khi vui – bài hát sôi động, tràn đầy năng lượng để chia sẻ niềm vui.</li>
+        <li>Khi buồn hay mệt mỏi – những bản nhạc nhẹ nhàng, sâu lắng để tìm sự đồng cảm và giải tỏa cảm xúc.</li>
+        <li class="amnhac">Âm nhạc như một người bạn thầm lặng, luôn đồng hành và giúp cân bằng cảm xúc trong cuộc sống thăng trầm.</li>
+      </ul>
+    </div>
+
+    <div class="sothich3">
+      <li>🌄 Du lịch thiên nhiên</li>
+      <ul>
+        <li>Thích cảm giác được hít thở bầu không khí trong lành, chiêm ngưỡng núi non hùng vĩ, biển cả bao la hay những cánh đồng bát ngát.</li>
+        <li>Được mở rộng tầm mắt, học hỏi thêm nhiều điều mới và cảm nhận được vẻ đẹp phong phú của thiên nhiên đất nước.</li>
+        <li>Giúp thư giãn, giải tỏa căng thẳng sau một năm học.</li>
+        <li>Có được những khoảnh khắc, kỉ niệm và những bức hình đẹp với gia đình, bạn bè, người thân.</li>
+      </ul>
+    </div>
+  </ol>
+
+  <script>
+    const elements = document.querySelectorAll('.sothich1, .sothich2, .sothich3');
+    function handleScroll() {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < triggerBottom) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  </script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sở thích của tôi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #f9f9f9, #e6f0ff);
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    ol {
+      list-style: decimal;
+      padding-left: 40px;
+      max-width: 850px;
+      margin: 0 auto;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    ul {
+      list-style: square;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+    .sothich1, .sothich2, .sothich3 {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #3498db;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .sothich1.visible,
+    .sothich2.visible,
+    .sothich3.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .amnhac {
+      color: #2c3e50;
+      font-style: italic;
+    }
+    li::marker {
+      color: #3498db;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Tôi có khá nhiều sở thích khác nhau, nhưng ba sở thích mà tôi yêu thích nhất là <strong>chơi cầu lông</strong>, <strong>nghe nhạc theo tâm trạng</strong> và <strong>đi du lịch để ngắm cảnh thiên nhiên</strong>. Những sở thích này không chỉ giúp tôi thư giãn mà còn mang lại cho tôi nhiều trải nghiệm thú vị trong cuộc sống.
+  </p>
+  <ol>
+    <div class="sothich1">
+      <li>🏸 Cầu lông</li>
+      <ul>
+        <li>Bắt đầu chơi từ khi còn học cấp hai và thường chơi vào mỗi buổi chiều, tối hay cuối tuần cùng bạn bè hoặc người thân.</li>
+        <li>Giúp rèn luyện sức khỏe, tăng sự dẻo dai</li>
+        <li>Giải tỏa căng thẳng sau những giờ học mệt mỏi.</li>
+        <li>Giúp học được cách phối hợp nhịp nhàng với đồng đội, cải thiện khả năng phản xạ và sự tập trung.</li>
+      </ul>
+    </div>
+
+    <div class="sothich2">
+      <li>🎧 Nghe nhạc theo tâm trạng</li>
+      <ul>
+        <li>Khi vui – bài hát sôi động, tràn đầy năng lượng để chia sẻ niềm vui.</li>
+        <li>Khi buồn hay mệt mỏi – những bản nhạc nhẹ nhàng, sâu lắng để tìm sự đồng cảm và giải tỏa cảm xúc.</li>
+        <li class="amnhac">Âm nhạc như một người bạn thầm lặng, luôn đồng hành và giúp cân bằng cảm xúc trong cuộc sống thăng trầm.</li>
+      </ul>
+    </div>
+
+    <div class="sothich3">
+      <li>🌄 Du lịch thiên nhiên</li>
+      <ul>
+        <li>Thích cảm giác được hít thở bầu không khí trong lành, chiêm ngưỡng núi non hùng vĩ, biển cả bao la hay những cánh đồng bát ngát.</li>
+        <li>Được mở rộng tầm mắt, học hỏi thêm nhiều điều mới và cảm nhận được vẻ đẹp phong phú của thiên nhiên đất nước.</li>
+        <li>Giúp thư giãn, giải tỏa căng thẳng sau một năm học.</li>
+        <li>Có được những khoảnh khắc, kỉ niệm và những bức hình đẹp với gia đình, bạn bè, người thân.</li>
+      </ul>
+    </div>
+  </ol>
+
+  <script>
+    const elements = document.querySelectorAll('.sothich1, .sothich2, .sothich3');
+    function handleScroll() {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < triggerBottom) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('load', handleScroll);
+  </script>
+
+</body>
+</html>
+>>>>>>> 5b59cfe (first commit)

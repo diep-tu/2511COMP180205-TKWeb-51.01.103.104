@@ -1,0 +1,289 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Ngô Diệp Tú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e8f0fe);
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .info p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .info p i {
+      margin-right: 10px;
+      color: #2980b9;
+    }
+
+    .info a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border 0.3s;
+    }
+
+    input:focus {
+      border-color: #3498db;
+      outline: none;
+      background-color: #f0f9ff;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Thông tin liên hệ</h1>
+  <div class="container fade-in">
+    <div class="info">
+        <p>Họ và tên: <strong>NGÔ DIỆP TÚ</strong></p>
+        <p>Email: <a href="mailto:5101103104@student.hcmue.edu.vn">5101103104@student.hcmue.edu.vn</a></p>
+        <p>Email cá nhân: <a href="mailto:diepngotu09@gmail.com">diepngotu09@gmail.com</a></p>
+        <p>SĐT: 0906 972 xxx</p>
+        <p><i>📍</i>Địa chỉ liên hệ:</p>
+    </div>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6505251921226!2d106.67960847480467!3d10.761393989386473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b91dddf0b%3A0x1ab004c91f448812!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgcGjhuqFtIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1759068825322!5m2!1svi!2s" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+  </div>
+
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const showFadeIn = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      fadeEls.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          el.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', showFadeIn);
+    window.addEventListener('load', showFadeIn);
+  </script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Ngô Diệp Tú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e8f0fe);
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    .info p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .info p i {
+      margin-right: 10px;
+      color: #2980b9;
+    }
+
+    .info a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      transition: border 0.3s;
+    }
+
+    input:focus {
+      border-color: #3498db;
+      outline: none;
+      background-color: #f0f9ff;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Thông tin liên hệ</h1>
+  <div class="container fade-in">
+    <div class="info">
+        <p>Họ và tên: <strong>NGÔ DIỆP TÚ</strong></p>
+        <p>Email: <a href="mailto:5101103104@student.hcmue.edu.vn">5101103104@student.hcmue.edu.vn</a></p>
+        <p>Email cá nhân: <a href="mailto:diepngotu09@gmail.com">diepngotu09@gmail.com</a></p>
+        <p>SĐT: 0906 972 xxx</p>
+        <p><i>📍</i>Địa chỉ liên hệ:</p>
+    </div>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6505251921226!2d106.67960847480467!3d10.761393989386473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b91dddf0b%3A0x1ab004c91f448812!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTxrAgcGjhuqFtIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1759068825322!5m2!1svi!2s" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+  </div>
+
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const showFadeIn = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+
+      fadeEls.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          el.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', showFadeIn);
+    window.addEventListener('load', showFadeIn);
+  </script>
+</body>
+</html>
+>>>>>>> 5b59cfe (first commit)

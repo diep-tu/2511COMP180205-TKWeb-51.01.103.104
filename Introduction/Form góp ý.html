@@ -1,0 +1,291 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e8f0fe);
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    .contact-form {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    form p {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    .half-size {
+      flex: 1 1 48%;
+    }
+
+    .full-size {
+      flex: 1 1 100%;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+      outline: none;
+    }
+
+    .submit {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    button[type="submit"] {
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #2980b9;
+      transform: scale(1.03);
+    }
+
+    .submit span {
+      font-size: 14px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .half-size {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="contact-form">
+  <h2>Cùng kết nối với nhau bằng cách điền form bên dưới nha!!!</h2>
+  <form method="" action="">
+    <p>
+      <input type="text" name="name" placeholder="* Nhập tên của bạn" value="" class="half-size">
+      <input type="text" name="phonenumber" placeholder="* Nhập số điện thoại của bạn" value="" class="half-size">
+    </p>
+    <p>
+      <input type="text" name="subject" placeholder="* Nhập ngành học của bạn" value="" class="full-size">
+    </p>
+    <p>
+      <textarea name="message" placeholder="* Lời nhắn gửi" cols="50" rows="8" class="full-size"></textarea>
+    </p>
+    <p class="submit">
+      <button type="submit">Send message</button>
+      <span>* Xin vui lòng điền vào tất cả ô trong form. Thank you!</span>
+    </p>
+  </form>
+</section>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e8f0fe);
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    .contact-form {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    form p {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    .half-size {
+      flex: 1 1 48%;
+    }
+
+    .full-size {
+      flex: 1 1 100%;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+      outline: none;
+    }
+
+    .submit {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    button[type="submit"] {
+      padding: 12px 25px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #2980b9;
+      transform: scale(1.03);
+    }
+
+    .submit span {
+      font-size: 14px;
+      color: #888;
+      margin-top: 5px;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .half-size {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<section class="contact-form">
+  <h2>Cùng kết nối với nhau bằng cách điền form bên dưới nha!!!</h2>
+  <form method="" action="">
+    <p>
+      <input type="text" name="name" placeholder="* Nhập tên của bạn" value="" class="half-size">
+      <input type="text" name="phonenumber" placeholder="* Nhập số điện thoại của bạn" value="" class="half-size">
+    </p>
+    <p>
+      <input type="text" name="subject" placeholder="* Nhập ngành học của bạn" value="" class="full-size">
+    </p>
+    <p>
+      <textarea name="message" placeholder="* Lời nhắn gửi" cols="50" rows="8" class="full-size"></textarea>
+    </p>
+    <p class="submit">
+      <button type="submit">Send message</button>
+      <span>* Xin vui lòng điền vào tất cả ô trong form. Thank you!</span>
+    </p>
+  </form>
+</section>
+
+</body>
+</html>
+>>>>>>> 5b59cfe (first commit)

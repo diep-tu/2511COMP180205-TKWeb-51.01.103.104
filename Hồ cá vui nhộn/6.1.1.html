@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Underwater Animation</title>
+  <style>
+    body {
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-hand-painted-simple-blue-seabed-image_9743.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      transition: background-image 1s ease-in-out;
+    }
+
+    #content div {
+      position: absolute;
+    }
+
+    #content img {
+      width: auto;
+      height: auto;
+    }
+
+    #shark {
+      left: 100px;
+      top: 400px;
+      animation: Shark 15s linear infinite;
+    }
+
+    @keyframes Shark {
+      0% { left: -250px; top: 400px; }
+      20% { left: 300px; top: 350px; }
+      40% { left: 600px; top: 200px; }
+      50% { left: 800px; top: 100px; transform: scaleX(1); }
+      60% { left: 600px; top: 150px; transform: scaleX(-1); }
+      80% { left: 300px; top: 300px; }
+      100% { left: -250px; top: 400px; transform: scaleX(-1); }
+    }
+
+    #turtle {
+      left: -200px;
+      top: 500px;
+      animation: Turtle 25s linear infinite;
+    }
+
+    @keyframes Turtle {
+      from { left: -200px; }
+      to { left: 100%; }
+    }
+
+    #diver1, #diver2, #diver3 {
+      animation: DiverBob ease-in-out infinite;
+    }
+
+    #diver1 {
+      left: 20%;
+      top: 150px;
+      animation-duration: 8s;
+    }
+
+    #diver2 {
+      left: 50%;
+      top: 200px;
+      animation-duration: 10s;
+      animation-delay: 1s;
+    }
+
+    #diver3 {
+      left: 75%;
+      top: 180px;
+      animation-duration: 9s;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes DiverBob {
+      0% { top: 150px; }
+      50% { top: 200px; }
+      100% { top: 150px; }
+    }
+
+    #goldfish {
+      left: 100%;
+      top: 80px;
+      animation: FishSchool 20s linear infinite;
+    }
+
+    #faintschool {
+      left: 100%;
+      top: 250px;
+      animation: FishSchool 30s linear infinite 5s;
+    }
+
+    @keyframes FishSchool {
+      from { left: 100%; }
+      to { left: -200px; }
+    }
+
+    #controls {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 999;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      background-color: rgba(0, 0, 50, 0.7);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: rgba(0, 100, 150, 0.8);
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-hand-painted-simple-blue-seabed-image_9743.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      overflow: hidden;
+      transition: background-image 1s ease-in-out;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div id="shark"><img src="C:\Users\HUAWEI\Pictures\shark.png" alt="Cá mập"></div>
+    <div id="turtle"><img src="C:\Users\HUAWEI\Pictures\turtle.png" alt="Rùa biển"></div>
+    <div id="diver1"><img src="C:\Users\HUAWEI\Pictures\diver1.png" alt="Thợ lặn 1"></div>
+    <div id="diver2"><img src="C:\Users\HUAWEI\Pictures\diver2.png" alt="Thợ lặn 2"></div>
+    <div id="diver3"><img src="C:\Users\HUAWEI\Pictures\diver3.png" alt="Thợ lặn 3"></div>
+    <div id="goldfish"><img src="C:\Users\HUAWEI\Pictures\goldFishSchool.png" alt="Đàn cá vàng"></div>
+    <div id="faintschool"><img src="C:\Users\HUAWEI\Pictures\faintSchool.png" alt="Đàn cá nhỏ"></div>
+  </div>
+
+  <div id="controls">
+    <button id="changeBgBtn">Đổi Nền</button>
+    <button id="musicBtn">Phát Nhạc</button>
+  </div>
+
+  <audio id="backgroundMusic" loop>
+    <source src="C:\Users\HUAWEI\Videos\drowning-75755.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ phát âm thanh.
+  </audio>
+
+  <script>
+    const bgList = [
+      'https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-hand-painted-simple-blue-seabed-image_9743.jpg',
+      'https://cellphones.com.vn/sforum/wp-content/uploads/2022/06/14-2.jpg',
+      'https://i.pinimg.com/736x/8f/cb/4f/8fcb4ffb637de2ffaf9cd82411390e41.jpg',
+      'https://png.pngtree.com/thumb_back/fh260/background/20230325/pngtree-deep-sea-bubbles-plant-sea-cartoon-advertising-background-image_2089143.jpg'
+    ];
+
+    let bgIndex = 0;
+    document.getElementById('changeBgBtn').addEventListener('click', () => {
+      bgIndex = (bgIndex + 1) % bgList.length;
+      document.body.style.backgroundImage = `url('${bgList[bgIndex]}')`;
+    });
+
+    const music = document.getElementById('backgroundMusic');
+    const musicBtn = document.getElementById('musicBtn');
+    let isPlaying = false;
+    musicBtn.addEventListener('click', () => {
+      if (isPlaying) {
+        music.pause();
+        musicBtn.textContent = 'Phát Nhạc';
+      } else {
+        music.play();
+        musicBtn.textContent = 'Tắt Nhạc';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>

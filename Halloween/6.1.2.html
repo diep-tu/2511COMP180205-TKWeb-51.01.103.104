@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thiệp Mời Halloween</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    @media screen and (orientation: landscape) {
+    body {
+        background-image: url('https://st.gamevui.vn/images/image/2022/10/14/hinh-nen-halloween-7.jpg');
+    }
+    }
+    body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: black url('https://img.pikbest.com/templates/20240904/happy-halloween-party-background-illustration-design-image_10708714.jpg!w700wp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    }
+    .container {
+    max-width: 1000px;
+    height: 50px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+    header {
+    text-align: center;
+    background-color: rgb(145, 30, 10);
+    padding: 20px;
+    color: rgb(232, 147, 11);
+    }
+    nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 10px;
+    }
+    nav li {
+    margin: 0 15px;
+    }
+    nav a {
+    color: orange;
+    text-decoration: none;
+    }
+    h1, h2 {
+    color: orange;
+    }
+    section {
+    margin: 30px 0;
+    animation: fadeIn 2s ease;
+    }
+    .scary-img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s;
+    }
+    .scary-img:hover {
+    transform: scale(1.1) rotate(5deg);
+    }
+    form input, form textarea, form select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    }
+    button {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-style: italic;
+    }
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+    }
+    .product-item {
+    position: relative;
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    transition: background 0.3s;
+    }
+    .product-item:hover {
+    background-color: #333;
+    }
+    .product-desc {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ccc;
+    animation: fadeIn 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="bgMusic" autoplay loop>
+    <source src="C:\Users\HUAWEI\Videos\halloween.mp3" type="audio/mpeg">
+    Trình duyệt không hỗ trợ âm thanh.
+  </audio>
+
+  <div class="container">
+    <header>
+      <h1>🎃 Thiệp Mời Dự Tiệc Halloween 🎃</h1>
+      <button id="toggleMusic">Phát nhạc</button>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#intro">Giới thiệu</a></li>
+        <li><a href="#history">Lịch sử</a></li>
+        <li><a href="#products">Sản phẩm</a></li>
+        <li><a href="#gallery">Bộ sưu tập</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="#register">Đăng ký</a></li>
+      </ul>
+    </nav>
+
+    <section id="intro">
+      <h2>Sinh viên</h2>
+      <p>👻 Ngô Diệp Tú - 51.01.103.104 - SPTIN B</p>
+    </section>
+
+    <section id="history">
+        <h2>Lịch sử Halloween</h2>
+        <p>Nguồn gốc lễ hội Halloween là từ lễ hội Samhain cổ xưa của người Celt (phiên âm là /sɛlt/), khi mọi người đốt lửa và mặc các trang phục kỳ lạ để xua đuổi ma quỷ.Lễ hội của người Celt là ngày đánh dấu sự kết thúc của mùa hè và bắt đầu bước vào mùa thu hoạch. Người Celt cho rằng thời điểm này rất tối tăm, lạnh lẽo và gắn liền với cái chết của con người. Chính vì vậy vào đêm trước năm mới, ranh giới giữa thế giới người sống và người chết trở nên mong manh hơn. Đó là lý do vào đêm ngày 31 tháng 10, người Celt tổ chức lễ Samhain. Người ta sẽ dập tắt ngọn lửa trong lò sưởi để ngăn không cho các hồn ma vào nhà. Và để tránh bị những hồn ma này nhận ra, mọi người sẽ đeo mặt nạ khi rời khỏi nhà lúc trời tối để các hồn ma nhầm họ với những linh hồn đồng loại.</p>
+        <h2>Ý nghĩa giáo dục</h2>
+        <p>Cuộc đời của nhân vật Jack trong lễ hội Halloween đã để lại nhiều bài học cho trẻ em đó là sống không được tham lam, keo kiệt mà hãy giữ cho mình trái tim bác ái, từ bi và phải biết giúp đỡ kẻ có hoàn cảnh khó khăn.Ngoài ra, lễ hội còn giáo dục mọi người rằng không nên chơi đùa, giao du với ma quỷ - những trò đe dọa người khác hay những sáng tạo có ảnh hưởng đến mọi người xung quanh. Vì chơi đùa với những điều này bạn sẽ đến với kết cục là đi vào con đường tối tăm và tội lỗi.</p>
+        <h2>Ý nghĩa nhân bản</h2>
+        <p>Theo câu chuyện, Jack là nhân vật đại diện cho cõi âm nhưng lại luôn cảm thấy cô đơn. Khi được hóa thân thành người vào ngày hội Halloween, Jack được vui chơi thoải mái, cùng những người sống hóa trang thành ma quỷ để đỡ cô đơn. Đây chính là nghĩa nhân bản của Halloween: Ngày âm dương hội ngộ nhưng chứa chan đầy tình thương.</p>
+    </section>
+
+    <section id="products">
+      <h2>🎁 Sản phẩm Halloween</h2>
+        <ul id="productList">
+            <li class="product-item">
+                🎃 Bí ngô ma quái
+                <div class="product-desc">
+                  Bí ngô ma quái (Jack-o'-lantern)<br>
+                  Hình dáng:Trái bí ngô tròn, có màu cam đặc trưng, đôi khi ngả vàng hoặc đỏ sẫm. Kích thước có thể lớn hoặc vừa tay cầm.<br>
+                  Khuôn mặt khắc: Mặt trước của bí ngô được khắc thủ công thành hình mặt người ma quái &ndash; thường là đôi mắt nhọn hoặc tròn, với ánh nhìn rình rập, mũi hình tam giác, miệng cười rợn rợn, nhọn hoắt hoặc nham nhở, có thể để lộ “răng”.<br>
+                  Ánh sáng bên trong có thể là một ngọn nến hoặc đèn LED được đặt vào bên trong, khiến khuôn mặt bí ngô phát sáng từ bên trong vào ban đêm, tạo hiệu ứng ám ảnh, rùng rợn, đặc biệt là khi đặt ngoài sân hoặc bệ cửa sổ.<br>
+                  Tỏa ra vẻ bí ẩn, kỳ quái, có phần hài hước nhưng cũng đáng sợ, đúng chất Halloween.
+                </div>
+            </li>
+            <li class="product-item">
+                🧛 Áo choàng Dracula
+                <div class="product-desc">
+                  Kiểu dáng tổng thể:Áo choàng dài, thường chạm đất hoặc ít nhất qua đầu gối. Thiết kế rộng rãi, bay bổng, giúp tạo hiệu ứng uy nghi, lạnh lùng và huyền bí khi di chuyển.<br>
+                  Chất liệu: Vải lụa, satin hoặc nhung, thường bóng nhẹ để tạo cảm giác sang trọng và bí ẩn.<br>
+                  Một số phiên bản Halloween dùng vải polyester nhẹ, dễ bay và tạo dáng khi gió thổi.<br>
+                  Màu sắc: Chủ đạo là đen tuyền &ndash; thể hiện sự u tối, chết chóc. Lót trong màu đỏ tươi hoặc đỏ sẫm, tượng trưng cho máu &ndash; một yếu tố đặc trưng của ma cà rồng.<br>
+                  Viền cổ và mép áo đôi khi có đường chỉ màu bạc hoặc đỏ để tạo điểm nhấn ma mị.<br>
+                  Cổ áo:Cao và dựng đứng – một đặc trưng không thể thiếu. Thường hình tam giác nhọn vươn lên phía sau đầu, giúp Dracula trông ngạo nghễ và quyền lực. Một số phiên bản hiện đại có thể gập xuống, nhưng bản kinh điển luôn là cổ dựng.<br>
+                  Chi tiết bổ sung: Khuy cài, dây buộc hoặc khóa móc phía trước cổ hoặc ngực.Có thể đính huy hiệu, biểu tượng dơi hoặc hoa văn gothic để tăng phần "quý tộc u ám".<br>
+                  Áo choàng Dracula là biểu tượng của:Sự quyến rũ chết người, quyền lực ma quái, cái ác mang vẻ ngoài lịch lãm.
+                </div>
+            </li>
+            <li class="product-item">
+                🕸️ Mặt nạ ghê rợn
+                <div class="product-desc">
+                  Chất liệu:Thường làm từ cao su mềm (latex), nhựa dẻo, hoặc silicone, giúp ôm sát mặt người đeo, tạo cảm giác chân thật. Một số phiên bản giá rẻ có thể làm bằng giấy bìa cứng ép, dùng một lần.<br>
+                  Màu sắc: Chủ đạo là màu da tái nhợt, trắng bệch, hoặc xanh xám &ndash; tượng trưng cho xác chết, ma quỷ.Các chi tiết thường đi kèm màu máu đỏ tươi, đen xì, hoặc vàng ố, tạo hiệu ứng phân hủy, bệnh hoạn hoặc đẫm máu.<br>
+                  Các đặc điểm nổi bật:<br>
+                  Đôi mắt:Hốc mắt sâu hoắm, đen ngòm hoặc đỏ rực như máu.<br>
+                  Miệng: Miệng há to, cười man dại hoặc gào thét &ndash; thường với răng nhọn hoắt, thưa thớt hoặc dính máu. Một số có lưỡi dài thè ra, nhăn nhúm như quái vật.<br>
+                  Khuôn mặt biến dạng: Một bên mặt chảy xệ, nứt nẻ hoặc bị lột da. Mắt lệch, đầu méo, da nhăn nheo như bị thiêu cháy hoặc nhiễm độc.<br>
+                  Chi tiết máu me / kinh dị: Máu chảy từ mắt, miệng, tai. Có thể khâu miệng bằng dây chỉ, hoặc đinh găm xuyên mặt &ndash; tạo cảm giác tra tấn man rợ.<br>
+                  Rùng rợn, ma quái, khiến người nhìn giật mình hoặc ám ảnh. Thường đi kèm với áo choàng đen, quần áo rách rưới, hoặc đạo cụ như dao đồ chơi, rìu dính máu...<br>
+                  Biến thể phổ biến:<br>
+                  Mặt nạ Ghostface (Scream): Khuôn mặt trắng kéo dài, miệng há to thành hình chữ “O” &ndash; nổi tiếng trong phim kinh dị.<br>
+                  Mặt nạ xác sống (zombie): Mặt nát, rữa, đầy vết cắn.<br>
+                  Mặt nạ quỷ: Có sừng, da đỏ hoặc đen, mắt ác.<br>
+                  Mặt nạ búp bê ác: Gương mặt trẻ con nhưng méo mó, với nụ cười hiểm ác.
+                </div>
+            </li>
+        </ul>
+        <button id="toggleProducts">Ẩn/Hiện sản phẩm</button>
+    </section>
+
+    <section id="gallery">
+      <h2>📸 Bộ sưu tập ảnh Halloween</h2>
+      <img src="C:\Users\HUAWEI\Pictures\Iconcreme-Halloween-Bat.512.png" alt="Ảnh 1" class="scary-img">
+      <img src="C:\Users\HUAWEI\Pictures\Iconcreme-Halloween-Cat.512.png" alt="Ảnh 2" class="scary-img">
+      <img src="C:\Users\HUAWEI\Pictures\Iconcreme-Halloween-Home.512.png" alt="Ảnh 3" class="scary-img">
+      <img src="C:\Users\HUAWEI\Pictures\Iconcreme-Halloween-Mummy.512.png" alt="Ảnh 4" class="scary-img">
+      <img src="C:\Users\HUAWEI\Pictures\Iconcreme-Halloween-Pumpkin.512.png" alt="Ảnh 5" class="scary-img">
+      <img src="C:\Users\HUAWEI\Pictures\Iconcreme-Halloween-Twitter.512.png" alt="Ảnh 6" class="scary-img">
+    </section>
+
+    <section id="contact">
+      <h2>📨 Liên hệ</h2>
+      <form>
+        <input type="text" placeholder="Họ tên" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <textarea placeholder="Lời nhắn..."></textarea><br>
+        <button>Gửi</button>
+      </form>
+    </section>
+
+    <section id="register">
+      <h2>📝 Đăng ký tham gia</h2>
+      <form>
+        <input type="text" placeholder="Tên của bạn" required><br>
+        <input type="tel" placeholder="Số điện thoại" required><br>
+        <select>
+          <option>Tham gia hoá trang</option>
+          <option>Khách mời</option>
+          <option>Thành viên tổ chức</option>
+        </select><br>
+        <button>Đăng ký</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; Ngô Diệp Tú &ndash; 2025 &ndash; Lễ Hội Halloween 🎃</p>
+    </footer>
+  </div>
+
+  <script>
+    $('#toggleProducts').click(function () {
+      $('#productList').slideToggle();
+    });
+
+    $('#toggleMusic').click(function () {
+      const music = document.getElementById("bgMusic");
+      if (music.paused) {
+        music.play();
+        $(this).text("Tắt nhạc");
+      } else {
+        music.pause();
+        $(this).text("Phát nhạc");
+      }
+    });
+        $('.product-item').hover(
+    function() {
+        $(this).find('.product-desc').stop(true, true).fadeIn();
+    },
+    function() {
+        $(this).find('.product-desc').stop(true, true).fadeOut();
+    }
+    );
+    function updateBackground() {
+    const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+        if (isPortrait) {
+            $('body').css('background-image', 'url("https://img.pikbest.com/templates/20240904/happy-halloween-party-background-illustration-design-image_10708714.jpg!w700wp")');
+        } else {
+            $('body').css('background-image', 'url("https://st.gamevui.vn/images/image/2022/10/14/hinh-nen-halloween-7.jpg")');
+        }
+    }
+    updateBackground();
+    window.addEventListener('resize', updateBackground);
+
+  </script>
+</body>
+</html>

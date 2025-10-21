@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài tập cá nhân - Ngô Diệp Tú</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://i.pinimg.com/564x/0b/5f/5b/0b5f5b67d467aaaaa9a3c527d9164126.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      transition: background-image 1s ease;
+    }
+    .container {
+      background-color: rgba(255, 240, 246, 0.9);
+      width: 90%;
+      max-width: 1000px;
+      height: 580px;
+      max-height: 800px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
+    .title {
+      background-color: #ff66b2;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #ffaad4;
+      padding: 10px 0;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropbtn {
+      background: none;
+      border: none;
+      color: #fff;
+      padding: 14px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+    .dropbtn:hover {
+      background-color: #ff66b2;
+      border-radius: 10px;
+    }
+    .dropdown-content a {
+      color: #d63384;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: 500;
+      transition: background 0.2s ease;
+    }
+    .dropdown-content a:hover {
+      background-color: #ffc4dd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .button-wrap {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .bg-btn {
+      padding: 10px 20px;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .bg-btn:hover {
+      background-color: #d94a9e;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .dropbtn {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+      }
+      .dropdown-content {
+        position: static;
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffe1ec;
+        min-width: 200px;
+        max-height: 60vh;
+        overflow-y: auto;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        animation: fadeIn 0.3s ease;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .dropdown-content::-webkit-scrollbar {
+        width: 6px;
+    }
+    .dropdown-content::-webkit-scrollbar-thumb {
+        background-color: #ff66b2;
+        border-radius: 10px;
+    }
+    .dropdown-content::-webkit-scrollbar-track {
+        background-color: #ffe1ec;
+    }
+    @media screen and (orientation: portrait) {
+        .dropdown-content {
+            max-height: 1000vh; 
+        }
+    }
+    p{
+        font-size: large;
+        font-family:'Franklin Gothic Medium';
+        font-weight: bold;
+        color:#e93440;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Bài tập cá nhân - Ngô Diệp Tú</div>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Chương 1</button>
+        <div class="dropdown-content">
+          <a href="./1.6.html">1.6</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Chương 2</button>
+        <div class="dropdown-content">
+          <a href="./2.1.5.html">2.1.5</a>
+          <a href="./2.1.6.html">2.1.6</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Chương 3</button>
+        <div class="dropdown-content">
+          <a href="./3.3.html">3.3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Chương 5</button>
+        <div class="dropdown-content">
+          <a href="./5.3.html">5.3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Chương 6</button>
+        <div class="dropdown-content">
+          <a href="./6.1.1.html">6.1.1</a>
+          <a href="./6.1.2.html">6.1.2</a>
+          <a href="./6.1.3.html">6.1.3</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="button-wrap">
+        <p>Hello cô! Đây là bài tập của em</p>
+        <button class="bg-btn" onclick="changeBackground()">Đổi nền</button>
+    </div>
+  </div>
+
+  <script>
+    const bgList = [
+      "https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20m%C3%A0u%20h%E1%BB%93ng%20nh%E1%BA%A1t/1.1/hinh-nen-mau-hong-nhat-1.jpg",
+      "https://mega.com.vn/media/news/1506_Hinh-nen-mau-hong115.jpg",
+      "https://enhome.vn/wp-content/uploads/2022/03/hinh-nen-mau-hong-pastel-58.jpg",
+      "https://donghodoapsuat.net/wp-content/uploads/2022/08/cute-hinh-nen-mau-hong-cho-may-tinh.jpg"
+    ];
+    let bgIndex = 0;
+    function changeBackground() {
+      bgIndex = (bgIndex + 1) % bgList.length;
+      document.body.style.backgroundImage = `url('${bgList[bgIndex]}')`;
+    }
+  </script>
+</body>
+</html>

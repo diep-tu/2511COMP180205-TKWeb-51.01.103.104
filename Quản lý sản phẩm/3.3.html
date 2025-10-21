@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 60px;
+      margin-left: 80px;
+    }
+
+    .form-container {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 70%;
+      box-sizing: border-box;
+    }
+    tr:nth-child(even) {
+        background-color:gray;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+    .form-container h3 {
+      margin-top: 0;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+    button {
+        padding: 10px 16px;
+        border: none;
+        border-radius: 4px;
+        background-color: green;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #show_product_list {
+      width: 100%;
+      border:0cap;
+    }
+
+    #show_product_list th, #show_product_list td {
+      padding: 12px;
+      border: 1px solid lightgray;
+      text-align: left;
+    }
+
+    #show_product_list th {
+      background-color: #f4f4f4;
+    }
+
+    #show_product_list tr:nth-child(even) {
+      background-color: #f9f9f9;
+      border: 0cap;
+    }
+
+    #show_product_list tr:nth-child(odd) {
+      background-color: lightgray;
+      border: 0cap;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .product-count {
+      font-weight: bold;
+    }
+    .box{
+        border: 1px solid lightgray;
+        padding: 20px;
+        width: 75%;
+    }
+  </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Add New Product</h3>
+        <input type="text" id="add_product" value="">
+        <button onclick="add_product()" style="background-color: red;">Add</button>
+    </div>
+    <div class="top-bar">
+        <h3>Display All Product</h3>
+        <p id="product_count"></p>
+    </div>
+    <table id="show_product_list" border="1"></table>
+</body>
+<script>
+  let product_list = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Redmi Note 4', 'Apple iPhone 6S', 'Xiaomi Mi 5s Plus', 'Apple iPhone 8 Plus', 'Fujitsu F-04E', 'Oppo A71'];
+  function show_product(){
+      let table = '';
+      for (let i = 0; i < product_list.length; i++) {
+          table += `
+          <tr>
+              <td>${product_list[i]}</td>
+              <td><button onclick="edit(${i})">Edit</button></td>
+              <td><button onclick="del(${i})">Delete</button></td>
+          </tr>`;
+      }
+      document.getElementById('show_product_list').innerHTML = table;
+      document.getElementById('product_count').innerText = `${product_list.length} products`;
+  }
+
+  function add_product(){
+      const newProduct = document.getElementById('add_product').value.trim();
+      if (newProduct !== "") {
+          product_list.push(newProduct);
+          document.getElementById('add_product').value = "";
+          show_product();
+      } else {
+          alert("Không thể để trống tên.");
+      }
+  }
+  function edit(index){
+      const newName = prompt("Nhập tên sản phẩm mới", product_list[index]);
+      if (newName && newName.trim() !== "") {
+          product_list[index] = newName.trim();
+          show_product();
+      }
+  }
+  function del(index){
+      if (confirm(`Bạn có chắc chắn muốn xóa "${product_list[index]}"?`)) {
+          product_list.splice(index, 1);
+          show_product();
+      }
+  }
+  show_product();
+</script>
+</html>
